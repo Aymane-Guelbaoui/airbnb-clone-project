@@ -130,4 +130,33 @@ After a completed stay, guests can leave reviews and ratings for properties. Thi
  Search and Filters
 Users can search properties by location, date, price, and other filters. This improves discoverability and helps users find suitable accommodations quickly.
 
+#API Security
+ Authentication
+We will use JWT (JSON Web Tokens) or OAuth for secure login sessions. Only authenticated users can access protected endpoints, ensuring identity verification before granting access to any user-related functionality.
 
+ Why it matters: Prevents unauthorized access to user accounts and sensitive actions like booking or property listing.
+
+ Authorization
+Role-based access control (RBAC) will ensure users can only perform actions appropriate to their roles (e.g., only hosts can add properties, only guests can book).
+
+ Why it matters: Keeps the system secure and prevents users from accessing or manipulating data that doesn't belong to them.
+
+ Input Validation & Sanitization
+All incoming data will be validated and sanitized to prevent SQL injection, XSS, and other common attacks.
+
+ Why it matters: Ensures the system only processes clean, expected data and protects the database from malicious queries.
+
+ Rate Limiting
+Rate limiting and throttling will be implemented to prevent abuse of endpoints (e.g., brute-force login attempts or spammy API calls).
+
+ Why it matters: Protects against DoS attacks and system overload by limiting the number of requests a user/IP can make in a given time.
+
+ HTTPS Encryption
+All API communication will occur over HTTPS to encrypt data in transit between clients and servers.
+
+ Why it matters: Ensures sensitive information like passwords and payment details cannot be intercepted by attackers.
+
+ Secure Payments
+If real payment gateways are used, secure APIs (e.g., Stripe, PayPal SDKs) will be integrated and tokenized to avoid storing raw payment data on our servers.
+
+ Why it matters: Payment security is critical for protecting financial data and building user trust.
