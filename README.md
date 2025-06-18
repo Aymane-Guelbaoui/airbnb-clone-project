@@ -160,3 +160,32 @@ All API communication will occur over HTTPS to encrypt data in transit between c
 If real payment gateways are used, secure APIs (e.g., Stripe, PayPal SDKs) will be integrated and tokenized to avoid storing raw payment data on our servers.
 
  Why it matters: Payment security is critical for protecting financial data and building user trust.
+
+#CI/CD Pipeline
+ Why CI/CD is Important:
+Automated Testing: Ensures new code doesn't break existing functionality.
+
+Faster Deployment: New features and bug fixes can be released more frequently and reliably.
+
+Improved Collaboration: Teams can merge code more easily with automated checks and feedback.
+
+Consistency: The same deployment process is used every time, reducing the chance of "it works on my machine" issues.
+
+ Tools We May Use:
+GitHub Actions: Automates tasks like testing, linting, and deployment on every push or pull request.
+
+Docker: Packages the app into containers, ensuring consistent environments for development, testing, and production.
+
+Heroku / Vercel / Netlify: For automated deployment of frontend or backend services.
+
+Postman/Newman: For running automated API tests during CI stages.
+
+ Typical Workflow:
+
+Developer pushes code to GitHub.
+
+GitHub Actions triggers automated tests and linting.
+
+If tests pass, the app is built and deployed via Docker or to a cloud platform.
+
+Feedback is provided automatically via pull request checks.
