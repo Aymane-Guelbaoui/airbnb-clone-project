@@ -229,4 +229,52 @@ These components follow common design patterns and will be implemented using a c
 
 ---
 
+### Project Roles and Responsibilities
+🔹 Project Manager
+Coordinates planning, timelines, and communication to ensure project delivery.
+
+🔹 Product Owner
+Defines product vision, manages backlog, and aligns development with user needs.
+
+🔹 Scrum Master
+Facilitates Scrum processes and removes blockers for the team.
+
+🔹 Frontend Developers
+Build UI components, ensure responsiveness, and connect with backend APIs.
+
+🔹 Backend Developers
+Implement APIs, data models, and server-side logic using Django.
+
+🔹 Designers
+Create user flows, wireframes, and high-fidelity designs for a smooth UX.
+
+🔹 QA/Testers
+Write and run test cases, ensure software quality, and report bugs.
+
+🔹 DevOps Engineers
+Set up CI/CD pipelines, manage deployments, and monitor system performance.
+
+---
+
+### UI/UX Design Planning
+🎯 Design Goals
+Clean, responsive, and user-friendly interface
+
+Fast and simple booking experience
+
+Accessible and intuitive navigation
+
+🔑 Key Features
+Property search with filters
+
+Detailed property pages
+
+Smooth checkout process
+
+---
+
+
+
+
+
 
