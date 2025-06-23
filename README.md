@@ -196,3 +196,37 @@ If using real payment gateways (e.g., Stripe, PayPal), data is tokenized and nev
 4. Results and feedback appear directly in the pull request.
 
 ---
+
+### UI Component Patterns
+In this section, we outline the key UI components that will be developed for the AirBnB Clone project. These components are designed to ensure a modular, reusable, and consistent user interface across the application.
+
+🔹 Navbar
+Purpose: Provides site-wide navigation links.
+
+Features: Logo, navigation links (e.g., Explore, Login/Signup), responsive design for mobile view.
+
+🔹 Property Card
+Purpose: Displays a summary of each property.
+
+Features: Image carousel, property title, location, price per night, ratings, and quick action buttons (e.g., Save to Wishlist).
+
+🔹 Footer
+Purpose: Shows additional navigation and legal links.
+
+Features: Links to terms of service, privacy policy, language/currency settings, and social media icons.
+
+🔹 Search Bar
+Purpose: Enables users to search for properties by location, date, and guests.
+
+Features: Auto-suggestions, date picker, guest selector, and responsive layout.
+
+🔹 Booking Modal
+Purpose: Facilitates the property booking process.
+
+Features: Price breakdown, selected dates, guest details, and confirm button.
+
+These components follow common design patterns and will be implemented using a component-based architecture to promote scalability and maintainability throughout the development lifecycle.
+
+---
+
+
